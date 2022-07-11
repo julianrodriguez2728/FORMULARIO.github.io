@@ -1,0 +1,380 @@
+/* estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: linear-gradient(125deg, rgb(34, 235, 8),rgb(20, 194, 136), rgb(18, 209, 177),rgb(29, 45, 197),rgb(221, 13, 186) );
+    background-size: 500%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: fanimation 10s infinite;
+}
+@keyframes fanimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* estilos */
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+#survey-form{
+    background-color: rgba(0, 0, 0, 0.909);
+    border: solid 4px white;
+    padding: 100px; 
+    border-radius: 20px;  
+    margin-bottom: 100px;
+} 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+#title{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+}
+#description{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.form-group{
+    display: grid;
+}
+.form-group p{
+    margin: 50px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.form-group label{
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.form-group input{
+    color: rgb(195, 191, 191);
+    background-color: rgb(66, 76, 83);
+    border: 2px solid rgb(14, 75, 121);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+}
+#dropdown{
+    color: rgb(231, 195, 35);
+    background-color: black;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+textarea{
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgb(66, 76, 83);
+    color: rgb(223, 223, 223);
+}
+#comentarios{
+    text-align: center;
+    padding-top: 20px;
+}
+.submit-button{
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 145, 0);
+    color: white;
+}
+#submit{
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+}
+@media (max-width: 1024px){
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    #survey-form{
+        background-color: rgba(0, 0, 0, 0.909);
+        border: solid 4px white;
+        padding: 80px; 
+        border-radius: 20px;  
+        margin-bottom: 100px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+    #title{
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+    }
+    #description{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px;
+        font-size: 25px;
+    }
+    .form-group{
+        display: grid;
+    }
+    .form-group p{
+        margin: 50px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    .form-group label{
+        color: rgb(255, 255, 255);
+        margin: 15px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .form-group input{
+        color: rgb(195, 191, 191);
+        background-color: rgb(66, 76, 83);
+        border: 2px solid rgb(14, 75, 121);
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #dropdown{
+        color: rgb(231, 195, 35);
+        background-color: black;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    textarea{
+        border-radius: 20px;
+        margin: 10px;
+        background-color: rgb(66, 76, 83);
+        color: rgb(223, 223, 223);
+    }
+    #comentarios{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .submit-button{
+        margin: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(255, 145, 0);
+        color: white;
+    }
+    #submit{
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+        width: 200px;
+    } 
+}
+@media (max-width: 700px){
+    .container{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #survey-form{
+        background-color: rgba(0, 0, 0, 0.909);
+        border: solid 4px white;
+        padding: 80px; 
+        border-radius: 20px;  
+        margin-bottom: 100px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+    #title{
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+    }
+    #description{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px;
+        font-size: 25px;
+    }
+    .form-group{
+        display: grid;
+    }
+    .form-group p{
+        margin: 50px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    .form-group label{
+        color: rgb(255, 255, 255);
+        margin: 15px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .form-group input{
+        color: rgb(195, 191, 191);
+        background-color: rgb(66, 76, 83);
+        border: 2px solid rgb(14, 75, 121);
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #dropdown{
+        color: rgb(231, 195, 35);
+        background-color: black;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    textarea{
+        border-radius: 20px;
+        margin: 10px;
+        background-color: rgb(66, 76, 83);
+        color: rgb(223, 223, 223);
+    }
+    #comentarios{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .submit-button{
+        margin: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(255, 145, 0);
+        color: white;
+    }
+    #submit{
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+        width: 200px;
+    } 
+}
+@media (max-width: 480px){
+    .container{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    #survey-form{
+        background-color: rgba(0, 0, 0, 0.752);
+        border: solid 2px white;
+        padding: 30px; 
+        border-radius: 20px;  
+        margin-bottom: 100px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+    #title{
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+    }
+    #description{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .form-group{
+        display: grid;
+    }
+    .form-group p{
+        margin: 20px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    .form-group label{
+        color: rgb(255, 255, 255);
+        margin: 15px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .form-group input{
+        color: rgb(195, 191, 191);
+        background-color: rgb(66, 76, 83);
+        border: 2px solid rgb(14, 75, 121);
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #dropdown{
+        color: rgb(231, 195, 35);
+        background-color: black;
+        font-size: 12px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    textarea{
+        border-radius: 20px;
+        margin: 10px;
+        background-color: rgb(66, 76, 83);
+        color: rgb(223, 223, 223);
+    }
+    #comentarios{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .submit-button{
+        margin: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(255, 145, 0);
+        color: white;
+    }
+    #submit{
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+        width: 200px;
+    } 
+}

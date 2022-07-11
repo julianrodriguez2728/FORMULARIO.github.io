@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuestas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <div class="container">
+        <header>
+            <h1 id="title" class="parrafo">¡Bienvenido!</h1>
+            <p id="description" class="parrafo">Ingresa tus datos en el Formulario</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">NOMBRE</label>
+                <input type="text"  name="name" id="name" class="form-control" placeholder="Introduzca su nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">EMAIL</label>
+                <input type="email"  name="email" id="email" class="form-control" placeholder="Introduzca su email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">EDAD</label>
+                <input type="number"  name="age" id="number" min="10" max="99" class="form-control" placeholder="Introduzca su Edad" required>
+            </div>
+            <div class="form-group">
+                <p>Cual de estas opciones realiza en el dia a dia</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>selecciona una de las opciones</option>
+                    <option value="estudiantes">Estudiante</option>
+                    <option value="trabajador">trabajador</option>
+                    <option value="casa">Me quedo en casa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Haces alguna actividad/hobbie en tu vida</p>
+                <label>
+                    <input name="radio" value="si" type="radio" class="input-radio" checked="">si</label>
+                <label>
+                    <input name="radio" value="no" type="radio" class="input-radio">No</label>
+                <label>
+                    <input name="radio" value="prefiero-no-responder" type="radio" class="input-radio">Prefiero no responder</label>
+            </div>
+            <div class="form-group">
+                <p>Que actividades Realizas</p>
+                <label><input name="Gimnasio" value="Gimnasio" type="checkbox" class="input-checkbox">Gimnasio</label>
+                <label><input name="Natacion" value="Natacion" type="checkbox" class="input-checkbox">Natacion</label>
+                <label><input name="Musica" value="Musica" type="checkbox" class="input-checkbox">Musica</label>
+                <label><input name="Peluqueria" value="Peluqueria" type="checkbox" class="input-checkbox">Peluqueria</label>
+                <label><input name="Otro" value="Otro" type="checkbox" class="input-checkbox">Otro</label>
+              </div>
+            <div class="form-group">
+                <p>DÉJANOS TU OPINION</p>
+                <textarea name="textarea" id="comentarios" cols="30" rows="10" placeholder="Deja tu comentario acá"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="Ingresar" id="submit" class="submit-button">Ingresar</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
